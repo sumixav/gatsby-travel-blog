@@ -11,11 +11,11 @@ import './contact.css'
 
 
 const ContactPage = () => {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const form = e.target;
-        navigate(form.getAttribute('action'));
-    }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     const form = e.target;
+    //     navigate(form.getAttribute('action'));
+    // }
 
     return (<Layout>
         <SEO title="Contact" />
@@ -25,7 +25,7 @@ const ContactPage = () => {
             <div className="contact__form">
                 <h1>Contact</h1>
                 <div className="inner">
-                    <form method='post' name='contact' action='/thanks' onSubmit={handleSubmit} data-netlify='true' netlify-honeypot='bot'>
+                    <form method='post' name='contact' action='/thanks' data-netlify='true' netlify-honeypot='bot'>
                         <input type="hidden" name='form-name' value='contact' />
                         <div className="field__hidden">
                             <label>Don't fill this out, human</label>
